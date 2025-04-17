@@ -1,0 +1,14 @@
+{
+    "name": "swarnajith/empdupe",
+    "description": "Package to generate EMPDUPE PAYG File for ATO",
+    "type": "library",
+    "license": "Free",
+    "authors": [
+        {
+            "name": "Swarnajith Fernando",
+            "email": "swarnajith@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

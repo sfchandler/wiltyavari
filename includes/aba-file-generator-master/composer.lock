@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d1ad0e4d0aba591fee528b7e0c6af0e3",
+    "packages": [
+        {
+            "name": "simonblee/aba-file-generator",
+            "version": "0.0.6",
+            "target-dir": "AbaFileGenerator",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simonblee/aba-file-generator.git",
+                "reference": "75ea3ea71a7379deafe9e504659b57670fdcfd3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simonblee/aba-file-generator/zipball/75ea3ea71a7379deafe9e504659b57670fdcfd3f",
+                "reference": "75ea3ea71a7379deafe9e504659b57670fdcfd3f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "vcs",
+            "autoload": {
+                "psr-0": {
+                    "AbaFileGenerator\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Generate ABA bank transaction files from a collection of transactions.",
+            "time": "2016-06-28T04:10:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

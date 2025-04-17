@@ -1,0 +1,1356 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * Chandler Services Admin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of Chandler Services Admin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+body{
+	font-family: Trebuchet MS,sans-serif;
+}
+ a, a:hover, a:active, a:visited {
+  cursor: pointer !important;
+}
+.rowId:hover{
+	cursor: pointer !important;
+}
+ #header{
+ 	background:#FFFFFF;
+ }
+ aside {
+ 	background: #0e3248;
+ 	background: -moz-linear-gradient(left, #1B2839  93%, #ebedec 100%);
+ 	background: -webkit-gradient(linear, left top, right top, color-stop(93%, #0e3248 ), color-stop(100%, #ebedec));
+  	background: -webkit-linear-gradient(left, #0e3248  93%, #ebedec 100%);
+  	background: -o-linear-gradient(left, #0e3248  93%, #ebedec 100%);
+  	background: -ms-linear-gradient(left, #0e3248  93%, #ebedec 100%);
+  	background: linear-gradient(to right, #0e3248  93%, #ebedec 100%);
+ }
+ .page-footer{
+ 	position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+ }
+ #main{
+ 	padding-bottom:0px;
+ }
+ .menu-on-top aside#left-panel nav > ul > li > ul {
+	 background: #0e3248 ;
+ }
+ time.icon strong {
+	background-color: #0e3248 ;
+  	-webkit-box-shadow: 0 2px 0 #0e3248 ;
+  	box-shadow: 0 2px 0 #0e3248 ;
+ }
+ #reportrange{
+	 font-size: 9pt;
+	 height: 22pt;
+ }
+ #scheduleBtn{
+	 font-size: 9pt;
+	 height: 22pt;
+ }
+.blink {
+	color: #FFF !important;
+	background: #AD1457;
+!important;
+}
+.vevo{
+	background-color: #F94653;
+	width: 100%;
+	height: 20px;
+}
+.vevo-blink {
+	background-color: white;
+	width: 100%;
+	height: 20px;
+}
+/* hover state universal for dropdown 
+.menu-on-top nav ul ul li a,
+.menu-on-top nav ul ul ul li a {
+	color: #4C4F53;
+}
+.menu-on-top nav ul ul li a:hover,
+.menu-on-top nav ul ul ul li a:hover {
+	color: #fff;
+	background-color: #4C4F53;
+}
+.menu-on-top nav ul ul li:hover > a {
+	color: #fff;
+	background-color: #4C4F53;
+}
+.menu-on-top nav > ul ul ul {
+	border-top: 1px solid #c7c7c7 !important;
+}*/
+/*input,
+select,
+textarea{
+	font-size: 9pt;
+	height: 22pt;
+}*/
+#ribbon {
+  background: #ebedec;
+}
+.page-footer {
+	background: darkgrey;
+}
+.state-error{
+	color:red;
+}
+.invalid{
+	color:red;
+}
+.error{
+ 	color:red;
+}
+.creditBalance{
+	color:rgba(49,188,8,1.00);
+	font-weight:bold;
+}
+.creditBalanceLabel{
+	color:rgba(33,114,180,1.00);
+}
+.mailListView{
+	height:300px;
+	overflow:scroll;
+}
+.mailJBListView{
+	height:300px;
+	overflow:scroll;
+}
+#tblMailView{
+	width:100%;
+	height:100%;
+}
+.content-body{
+	position: relative;
+}
+.content-body .table-wrap{
+  background: #ffffff;
+  padding: 0px 0px 0px;
+  position: relative;
+  margin-left: 0px;
+  overflow-x: hidden;
+}
+.content-body.no-content-padding {
+  margin-top: 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+.inbox-body {
+  position: relative;
+}
+.inbox-body .table-wrap {
+  background: #ffffff;
+  padding: 0px 0px 0px;
+  position: relative;
+  margin-left: 0px;
+  overflow-x: hidden;
+}
+.inbox-body.no-content-padding {
+  margin-top: 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+.jb-body {
+	position: relative;
+}
+.jb-body .table-wrap {
+	background: #ffffff;
+	padding: 0px 0px 0px;
+	position: relative;
+	margin-left: 0px;
+	overflow-x: hidden;
+}
+.jb-body.no-content-padding {
+	margin-top: 0;
+	background: #ffffff;
+	overflow: hidden;
+}
+.container-body {
+  background: #ffffff;
+  min-height:550px;
+  height: 100%;
+  overflow:hidden;
+}
+
+.mailContainer{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	margin-bottom:100px;
+	width:100%;
+	clear:both;
+}
+.mailJBContainer{
+	margin-bottom:100px;
+	width:100%;
+	clear:both;
+}
+.mailListView{
+	width:70%;
+	float:left;
+	height:100%;
+	overflow:hidden;
+}
+.mailBoxLink{
+	
+}
+.referenceTitle{
+	font-size:14px;
+	font-weight:500;
+	color: #3377b1;
+}
+.mFrom {
+	font-size:16px;
+	font-weight:500;
+	color: #3377b1;
+}
+.mTo{
+	font-size: 12px;
+}
+.subject{
+	font-size: 12px;
+}
+.personList{
+	height:400px;
+	overflow:auto;
+}
+
+#tblPerson{
+	width:100%;
+}
+#smsDataTable{
+	width:100%;
+	height:500px;
+}
+.smsList{
+	height:500px;
+	overflow:auto;	
+}
+#smsLoading{
+	display:none; color:red; font-size:12px;
+}
+.tblHeadGreen{
+	background-color: #B1E693;
+}
+.tblHeadGrey{
+	background-color: #717171;
+}
+.inboxList{
+	font-size:10px;
+	height:500px;
+	overflow:auto;
+}
+#inbLoading{
+	display:none; 
+	color:red; 
+	font-size:12px;
+}
+.jbInboxList{
+	font-size:10px;
+	height:500px;
+	overflow:scroll;
+}
+#jbLoading{
+	display:none;
+	color:red;
+	font-size:12px;
+}
+.dashNotesList{
+	font-size:10px;
+	height:500px;
+	overflow:auto;	
+}
+#dashNotesLoading{
+	display:none; 
+	color:red; 
+	font-size:12px;
+}
+.attrContent{
+	height:300px;
+	overflow:auto;
+}
+#attrLoading{
+	display:none; 
+	color:red; 
+	font-size:12px;
+}
+#inbox-table{
+	font-size:11px;
+	width: 100%;
+}
+#inbox-table th{
+	font-size: 12pt;
+	font-weight: bold;
+}
+#inbox-table td{
+	word-wrap:break-word;
+    /*padding-bottom: 50%;
+    box-shadow: inset 0 0 2px 2px #fff;
+    background-color: #bada55;
+    white-space:nowrap;*/
+}
+#jb-table{
+	font-size:10px;
+	width: 100%;
+}
+#jb-table td{
+	word-wrap:break-word;
+	/*padding-bottom: 50%;
+    box-shadow: inset 0 0 2px 2px #fff;
+    background-color: #bada55;
+    white-space:nowrap;*/
+}
+.category {
+    float:left;
+    display:block;
+    width:112px;
+    height:22px;
+    border:1px solid #000;
+	
+}
+.custom-menu {
+    z-index:1000;
+    position: absolute;
+    background-color:rgba(255,255,255,1.00);
+    border: 1px solid black;
+    padding: 2px;
+	width:200px;
+}
+
+.mailView{
+	width:30%;
+	float:right;
+}
+#tblMailView{
+	width:100%;
+	height:100%;
+}
+.mailJBView{
+	width:30%;
+	float:right;
+}
+#tblJBMailView{
+	width:100%;
+	height:100%;
+}
+.messageid{
+}
+.red-percentage{
+	background-color:#d50a24;
+	font-weight: bold;
+	color:white;
+	text-align:center;
+}
+.orange-percentage{
+	background:#edab3d;
+	font-weight: bold;
+	color:white;
+	text-align:center;
+}
+.yellow-percentage{
+	background:#f3ec57;
+	font-weight: bold;
+	color:black;
+	text-align:center;
+}
+.green-percentage{
+	background:#4fc487;
+	font-weight: bold;
+	color:white;
+	text-align:center;
+}
+#progress { position:relative; width:200px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; margin-top:10px; }
+#bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+#percent { position:absolute; display:inline-block; top:3px; left:48%; }
+/* ------------- ajax loading styles ---------- */
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/processing.gif')
+                50% 50% 
+                no-repeat;
+}
+.loadDisplay {
+	display:    none;
+	position:   fixed;
+	z-index:    1000;
+	top:        0;
+	left:       0;
+	height:     100%;
+	width:      100%;
+	background: rgba( 255, 255, 255, .8 )
+	url('../img/processing.gif')
+	50% 50%
+	no-repeat;
+}
+/*.processing {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/processing.gif')
+                50% 50% 
+                no-repeat;
+}*/
+/*ajax-loader.gif*/
+/* When the body has the loading class, turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+body.ajaxLoader {
+	overflow: hidden;
+}
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.ajaxLoader .loadDisplay {
+	display: block;
+}
+/* ------------  end ajax styles -------------*/
+/* ------------- ajax loading styles ---------- */
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.smsmodal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/processing.gif')
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, turn
+   the scrollbar off with overflow:hidden */
+body.smsprocessing {
+    overflow: hidden;   
+}
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.smsprocessing .smsmodal {
+    display: block;
+}
+/*input[type="file"] {
+	display: none;
+}*/
+.custom-file-upload {
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 6px 12px;
+	cursor: pointer;
+}
+.profile_img_small{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #FFFFFF;
+	/* box-shadow */
+	-webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
+	-moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+	box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+.profile_img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #FFFFFF;
+	/* box-shadow */
+	-webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
+	-moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+	box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+.btn-info{
+	background-color: #0e3248;
+	border: 1px solid #0e3248;
+	color: white;
+}
+.btn-info:hover{
+	background-color: #45c3c2;
+	border: 1px solid #45c3c2;
+	color: white;
+}
+.btn-info:active:focus{
+	background-color: #45c3c2;
+	border: 1px solid #45c3c2;
+	color: white;
+}
+.btn-info:active{
+	background-color: #45c3c2;
+	border: 1px solid #45c3c2;
+	color: white;
+}
+.btn-info.reverse{
+	background-color: #45c3c2;
+	border: 1px solid #45c3c2;
+	color: white;
+}
+.btn-info.reverse:active:focus{
+	background-color: #45c3c2;
+	border: 1px solid #45c3c2;
+	color: white;
+}
+.btn-info.reverse:hover{
+	background-color: #0e3248;
+	border: 1px solid #0e3248;
+	color: white;
+}
+/* ------- Schedule Styles ------------------- */
+.roster-button{
+	width: 120px;
+}
+.schTbl{
+	border:rgba(72,164,223,1.00) 1px solid;
+	table-layout: fixed;
+    width: 100%;
+}
+.rowGreen{
+	background:rgba(163,252,132,1.00);
+}
+.rowGrey{
+	background:rgba(200,200,200,1.00);
+}
+.rosterColorDefinition{
+	/*padding-left: 35%;*/
+	font-size: 8pt;
+	font-weight: 600;
+}
+.rosterLabel{
+	float: left;
+	padding-left: 10px;
+}
+.rosterDefault{
+	/*background:rgba(253,241,163,1.00);*/
+	background: #FFA07A;
+	border:#a65858 solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterSMSSent{
+	background:rgba(212,255,174,1.00);
+	border:rgba(50,156,0,1.00) 1px solid;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftConfirmed{
+	background:rgba(0,215,4,1.00);
+	border:rgba(30,95,0,1.00) 1px solid;*
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftCancelled{
+	background: #d5e4eb;
+	border:#3c3f41 1px solid;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftSick{
+	background: #dd60e4;
+	border:#3c3f41 1px solid;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftRejected{
+	background: #d82f4a;
+	border:#3c3f41 1px solid;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftUnfilled{
+	background:#f1f1e3;
+	border:#9F9386 1px solid;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterNotAvailable{
+	background:orangered;
+	color: #2a2725;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	font-weight: bold;
+	padding: 1px 1px 1px 1px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftNotAvailable{
+	background: lightslategray;
+	border:#0a2b1d solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterExistingShift{
+	background: goldenrod;
+	border:darkgoldenrod solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+#rosterTable{
+	min-width: 300px;
+	min-height: 50px;
+	width:100%;
+	overflow-x:scroll;
+	overflow-y: scroll;
+	padding-bottom: 50px;
+}
+.rosterReportDiv{
+	height: 500px;
+	overflow: auto;
+}
+/* ================ roster table body scroll styles ==================*/
+.rosterTable{
+	display: block;
+	empty-cells: show;
+	border-spacing: 0;
+}
+.rosterTable thead{
+	position:relative;
+	display: block;
+	width:100%;
+	overflow-y: scroll;
+	scrollbar-gutter: stable both-edges;
+}
+.rosterTable tbody{
+	display: block;
+	position:relative;
+	width:100%;
+	overflow-y:scroll;
+	height: 600px;
+}
+.rosterTable tr{
+	width: 100%;
+	display:flex;
+}
+.rosterTable td,.rosterTable th{
+	flex-basis:100%;
+	flex-grow:2;
+	display: block;
+	/*padding: 1rem;*/
+	/*	text-align:center;*/
+}
+.rosterTable.small-first-col td:first-child,
+.rosterTable.small-first-col th:first-child{
+	flex-basis:20%;
+	flex-grow:1;
+}
+.rosterTable tbody tr:nth-child(2n){
+	background-color: rgba(130,130,170,0.1);
+}
+/*=====================================*/
+
+/*.rosterTableBody{
+	height: 980px;
+	overflow: auto;
+}
+.rosterTable{
+	!*overflow: scroll;
+	padding-bottom: 50px;*!
+}*/
+.rosterTblHeader{
+	text-align:center;
+	font-weight:bold;
+	color:rgba(0,122,189,1.00);
+	text-decoration:none;
+	cursor:pointer;
+	/*background: #f1f1e3;*/
+}
+.fth-header{
+	color: black;
+	/*background-image: linear-gradient(to top, #0e3248 0%, #ebedec 100%);*/
+}
+.rosterTableHeaderCellLeftAligned{
+	text-align:left;
+	font-weight:bold;
+	color: black;
+	/*background-color: #E4E4E1;
+	background-image: linear-gradient(to top, #0e3248 0%, #ebedec 100%);*/
+	text-decoration:none;
+	cursor:pointer;
+	/*width: 20%;*/
+}
+.rosterTableHeaderCell{
+	text-align:center;
+	font-weight:bold;
+	color: black;
+	/*background-color: #E4E4E1;
+	background-image: linear-gradient(to top, #0e3248 0%, #ebedec 100%);*/
+	text-decoration:none;
+	cursor:pointer;
+	/*width: 20%;*/
+}
+.rosterTableAction{
+	/*width: 20%;*/
+}
+.addshift{
+	text-align:center;
+	font-size:18pt;
+	font-weight: bold;
+	cursor:pointer;
+}
+.unavailableLink{
+	background:orangered;
+	color: #2a2725;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	font-weight: bold;
+	padding: 1px 1px 1px 1px;
+}
+.rosterNote{
+	width: 50px;
+	height: 50px;
+	padding: 5px 5px 5px 5px;
+	cursor:pointer;
+}
+.rosterCell{
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+}
+.rosterRowHeader{
+	text-align: justify;
+	white-space:nowrap;
+}
+.shiftDisplay{
+	/*background:rgba(253,241,163,1.00);*/
+	background: #FFA07A;
+	border:#a65858 solid 1px;
+	-moz-border-radius: 3px;
+	border-radius: 5px;
+	width:80px;
+	height:60px;
+	text-align: center;
+}
+.exshiftDisplay{
+	background: #7d5b15;
+	border:#7d5b15 solid 1px;
+	-moz-border-radius: 3px;
+	border-radius: 5px;
+	width:80px;
+	height:60px;
+}
+.shfStatus{
+	font-size: 7pt;
+	color: white;
+	font-weight: bold;
+	text-transform: lowercase;
+}
+.smsSent{
+	background:rgba(212,255,174,1.00);
+	border:rgba(50,156,0,1.00) 1px solid;
+}
+.shiftConfirmed{
+	background:rgba(0,215,4,1.00);
+	border:rgba(30,95,0,1.00) 1px solid;
+}
+.shiftUnfilled{
+	background:#f1f1e3;
+	border:#9F9386 1px solid;
+}
+.shiftCancelled{
+	background: #d5e4eb;
+	border:#3c3f41 1px solid;
+}
+.shiftSick{
+	background: #dd60e4;
+	border:#3c3f41 1px solid;
+}
+.shiftRejected{
+	background: #d82f4a;
+	border:#3c3f41 1px solid;
+}
+.shiftNotAvailable{
+	background: lightslategray;
+	border:#0a2b1d solid 1px;
+}
+.shiftVoiceMail{
+	background:#82a882;
+	border:#82a882 solid 1px;
+}
+.shiftNoAnswer{
+	background: #9F9386;
+	border:#9F9386 solid 1px;
+}
+.shiftNoShow{
+	background: #000000;
+	border:#000000 solid 1px;
+}
+.shiftCancelWithNotice{
+	background: #D8BFD8;
+	border:#DDA0DD solid 1px;
+}
+.shiftCancelWithoutNotice{
+	background: #87CEEB;
+	border:#1E90FF solid 1px;
+}
+.shiftCancelAgency{
+	background: #45c3c2;
+	border:#45c3c2 solid 1px;
+}
+.shiftCheckedIn{
+	background: #57a0be;
+	border:#0a2b1d solid 1px;
+}
+.shiftCheckedOut{
+	background:#ffe2a4;
+	border:#F5DEB3 solid 1px;
+}
+.shiftAccepted{
+	background:#ADFF2F;
+	border:#006400 solid 1px;
+}
+.shiftRelease{
+	background-image:url("../img/shift_release_small.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.rosterVoiceMail{
+	background: #82a882;
+	border:#82a882 solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterNoAnswer{
+	background: #9F9386;
+	border:#9F9386 solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterNoShow{
+	 background: #000000;
+	 border:#000000 solid 1px;
+	 -moz-border-radius: 1px;
+	 border-radius: 1px;
+	 width:15px;
+	 height:15px;
+	 float: left;
+	 margin-right: 5px;
+}
+.rosterCheckedIn{
+	background: #57a0be;
+	border:#0a2b1d solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterCheckedOut{
+	background:#ffe2a4;
+	border:darkgoldenrod solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosteredShift{
+	background: goldenrod;
+	border:darkgoldenrod solid 1px;
+}
+.rosterCancelWithNotice{
+	background:#D8BFD8;
+	border:#DDA0DD solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterCancelWithoutNotice{
+	background:#87CEEB;
+	border:#1E90FF solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftCancelAgency{
+	background: #45c3c2;
+	border:#45c3c2 solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.rosterShiftAccepted{
+	background: #ADFF2F	;
+	border: #006400	 solid 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	width:15px;
+	height:15px;
+	float: left;
+	margin-right: 5px;
+}
+.pushed{
+	background: #ADFF2F;
+	border: 1px solid darkgreen;
+}
+.scroll-custom {
+	max-height: 250px;
+	padding: 1rem;
+	overflow-y: auto;
+	direction: ltr;
+	scrollbar-color: #0e3248 #e4e4e4;
+	scrollbar-width: auto;
+}
+.scroll-custom::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(180deg, #0e3248 0%, #45c3c2 99%);
+	box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+	border-radius: 100px;
+}
+.vaccinationIcon{
+
+}
+.vaccSVG{
+	fill: #00C853;
+}
+.erMsg{
+	color:rgba(255,0,4,1.00);
+	font-weight:bold;
+}
+.shifTimes{
+	font-size:10px;
+	font-weight: bold;
+}
+.Male{
+	background:rgba(158,214,255,1.00);
+}
+.Female{
+	background:rgba(255,184,248,1.00);
+}
+.cellColorMale{
+	background:rgba(158,214,255,1.00);
+}
+.cellColorFeMale{
+	background:rgba(255,184,248,1.00);
+}
+.cellColorUnfilled{
+	background: #f1f1e3;
+}
+.hrsWorked{
+	font-size:9px;
+}
+.hrsTotal{
+	background: #ff000b;
+	color: white;
+	font-size: 11pt;
+	font-weight: bold;
+}
+.exShiftInfo{
+	font-size: 8px;
+}
+.smsShiftLink{
+	
+}
+.clientName{
+	font-size:12px;
+	color:rgba(79,79,79,1.00);
+}
+.stateName{
+	font-size:11px;
+	color:rgba(79,79,79,1.00);
+}
+.deptName{
+	font-size:11px;
+	font-style:italic;
+	color:rgba(79,79,79,1.00);
+}
+.employeeName{
+	font-size:11px;
+	font-weight:bold;
+	text-transform: uppercase;
+	/*color:rgba(79,79,79,1.00);*/
+	color: black;
+}
+.candidateid{
+	font-size:8pt;
+	font-weight:bold;
+}
+.lamattinaId{
+	font-size:10px;
+	font-weight:bold;
+	font-style: italic;
+	color:#0e3248 ;
+}
+.candidatemobileno{
+	font-size:9pt;
+	font-weight: bold;
+}
+.candidatemobilenoLink{
+	font-size:9pt;
+	font-weight: bold;
+}
+.supportInfo{
+	font-size: 8px;
+	font-weight: bold;
+	color: red;
+}
+.payroll-icon{
+background-image: url("../img/payrollw.png");
+background-repeat: no-repeat;
+}
+.filterPanel{
+
+}
+.timeSheetDiv{
+font-size: 9pt;
+padding-bottom: 50px;
+overflow-y: scroll;
+height: 500px;
+}
+.timeSheetTable tr{
+height: 5px;
+}
+.timeSheetTable tr td{
+text-align: right;
+}
+.ordinary {
+text-align: right;
+}
+.overtime {
+text-align: right;
+}
+.doubletime{
+text-align: right;
+}
+.holiday{
+text-align: right;
+}
+.timeTotals{
+text-align: right;
+}
+#supervisorDetails{
+font-size: 9pt;
+}
+/* Tooltip Styles*/
+/*.exshiftDisplay:after {
+	content: attr(title);
+	background-color: black;
+	color: white;
+	white-space: pre;
+	display: inline-block;
+}*/
+.ui-tooltip, .arrow:after {
+	background: #2B3D53;
+	border: 2px solid white;
+}
+.ui-tooltip {
+	max-width: 400px;
+	width: 300px;
+	text-align:left;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+	font: bold 12px "Helvetica Neue", Sans-Serif;
+	text-transform: uppercase;
+	box-shadow: 0 0 7px black;
+	white-space: pre-line;
+}
+.ui-tooltip-content {
+	text-align:left;
+}
+.arrow {
+	width: 70px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	bottom: -16px;
+}
+.arrow.top {
+	top: -16px;
+	bottom: auto;
+}
+.arrow.left {
+	left: 20%;
+}
+.arrow:after {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: -20px;
+	width: 25px;
+	height: 25px;
+	box-shadow: 6px 5px 9px -9px black;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.arrow.top:after {
+	bottom: -20px;
+	top: auto;
+}
+/* dialog styles */
+.ui-dialog-buttonset .saveButton{
+	color: #00a300;
+}
+#days {
+	font-size: 50px;
+	color: #FFF;
+	text-align: center;
+	letter-spacing: 3px;
+	background-color: #F24236;
+	width: 150px;
+	font-family: 'Cookie', cursive;;
+}
+/* ----------- end schedule styles ------------*/
+.marquee {
+	margin: 0 auto;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.marquee span {
+	display: inline-block;
+	padding-left: 100%;
+	animation: marquee 20s linear infinite;
+}
+/* Make it move */
+@keyframes marquee {
+	0%   { transform: translate(0, 0); }
+	100% { transform: translate(-100%, 0); }
+}
+.notifyRed {
+	color: #2a3133;
+	background-color: #ff7676;
+	font-weight: bold;
+	animation: blinker 3s linear infinite;
+}
+.notifyGreen {
+	color: #2a3133;
+	background-color: #00FF00;
+	font-weight: bold;
+	animation: blinker 3s linear infinite;
+}
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+/*#candidateDocList table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 2px solid black;
+}
+
+#candidateDocList thead, tbody, tr, td, th { display: block; }
+
+#candidateDocList  tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+#candidateDocList  thead th {
+	height: 30px;
+	line-height: 30px;
+	!*text-align: left;*!
+}
+
+#candidateDocList  tbody {
+	height: 100px;
+	overflow-y: auto;
+}
+
+#candidateDocList  thead {
+	!* fallback *!
+	width: 97%;
+	!* minus scroll bar width *!
+	width: calc(100% - 17px);
+}
+
+#candidateDocList tbody { border-top: 2px solid black; }
+
+#candidateDocList tbody td, thead th {
+	width: 19.2%;
+	float: left;
+	border-right: 1px solid black;
+}
+
+#candidateDocList tbody td:last-child, thead th:last-child {
+	border-right: none;
+}*/
+.shiftCount{
+	color:rgba(49,188,8,1.00);
+	font-weight:bold;
+}
+
+.row-for-cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	background-color: white; /* off-white */
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 4px;
+	height: auto;
+	margin-top: 3rem;
+}
+.card span {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+.card-footer {
+	position: relative;
+	bottom: 0px;
+	margin: 5px;
+}
+.card-header{
+	height: 40px;
+	padding-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+@media (min-width: 768px) and (max-width: 880px) {
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+}
+@media (max-width: 480px) {
+	/*.mailListView{
+		float: none;
+		margin-right:0;
+		width:auto;
+		border:0;
+	}*/
+}
+@media (min-width: 768px) and (max-width: 880px) {
+}
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+}
+
+@media only screen and (min-width: 700px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 979px) {
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+@media (min-width: 768px) and (max-width: 880px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+}
+
+@media (max-width: 979px) {
+}
